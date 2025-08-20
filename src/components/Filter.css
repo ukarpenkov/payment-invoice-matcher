@@ -1,0 +1,277 @@
+.FilterWrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.Breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.IconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.IconButton:hover {
+  background-color: #f5f5f5;
+}
+
+.Filter {
+  color: #2e3238;
+}
+
+.BreadcrumbsList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+}
+
+.BreadcrumbsList li {
+  display: flex;
+  align-items: center;
+}
+
+.BreadcrumbsLink {
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.BreadcrumbsLink:hover {
+  background-color: #f0f0f0;
+}
+
+.BreadcrumbsChevron {
+  display: flex;
+  align-items: center;
+  color: #2e3238;
+}
+
+.FilterWrapContent {
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  margin-top: 8px;
+}
+
+.FilterWrapContent.active {
+  display: block;
+}
+
+.Filter {
+  padding: 16px;
+}
+
+.FilterControls {
+  margin-bottom: 16px;
+}
+
+.FilterControlsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.Column {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.FilterMainLabel {
+  font-weight: 600;
+  color: #2e3238;
+  margin-right: 8px;
+}
+
+.DefaultButton {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.DefaultButton:hover {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+.DefaultButton.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.PrimaryButton {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.PrimaryButton:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.PrimaryButton:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.ClearAll {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.ClearAll:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.FilterConditions {
+  margin-bottom: 16px;
+}
+
+.Row {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.Fields {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.Field {
+  flex: 1;
+}
+
+.ConditionField {
+  width: 100%;
+}
+
+.Remove {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.EmptyState {
+  text-align: center;
+  padding: 24px;
+  color: #6c757d;
+}
+
+.Buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.Button {
+  min-width: 80px;
+}
+
+/* Стили для CustomSelect */
+.CustomSelectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.CustomSelectInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s;
+}
+
+.CustomSelectInput:hover {
+  border-color: #ccc;
+}
+
+.InputText {
+  flex: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.InputChevron {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.CustomSelectDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.SearchInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  outline: none;
+}
+
+.SelectOption {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.SelectOption:hover {
+  background-color: #f5f5f5;
+}
+
+.SelectOption.selected {
+  background-color: #007bff;
+  color: white;
+}
