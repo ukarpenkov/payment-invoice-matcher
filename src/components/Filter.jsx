@@ -361,7 +361,7 @@ const getConditionTitle = (condition) => {
 const getFieldValues = (fieldKey) => {
   return [
     { value: "cash", label: "наличный" },
-    { value: "value2", label: "Значение 2" },
+    { value: "study", label: "обучение" },
   ];
 };
 

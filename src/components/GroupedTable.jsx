@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./GroupedTable.css"; // Импорт стилей
+import Pagination from "./Pagination";
 
 const GroupedTable = ({
   columns = [],
@@ -201,6 +202,15 @@ const GroupedTable = ({
           ))}
         </tbody>
       </table>
+      <div style={{ marginLeft: "30px", marginTop: "25px" }}>
+        <Pagination
+          currentPage={1}
+          totalPages={10}
+          onPageChange={2}
+          showQuickNavigation={false}
+          showFirstLastButtons={false}
+        />
+      </div>
     </div>
   );
 };
